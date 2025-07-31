@@ -9,7 +9,7 @@ class LatihanDua extends StatelessWidget {
       width: 300,
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
-        color: Colors.white, // card background putih
+        color: Colors.white,
         borderRadius: BorderRadius.circular(15),
       ),
       child: Column(
@@ -69,7 +69,7 @@ class LatihanDua extends StatelessWidget {
     return MainLayout(
       title: 'Testimoni dari Klien Kami 💬✨',
       body: Container(
-        color: const Color(0xFFF8C6D4), // pink soft background
+        color: const Color(0xFFF8C6D4),
         width: double.infinity,
         padding: const EdgeInsets.all(24),
         child: Column(
@@ -85,13 +85,27 @@ class LatihanDua extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 24),
+
+            // Testimoni 1
             Center(
               child: buildTestimonialCard(
-                'Algis Gentala Samudra',
-                'agiss@gmail.com',
+                'Isma Tiara Zalianti',
+                'iaa@gmail.com',
                 'Aplikasinya benar-benar mempermudah pekerjaan kami! Tampilan elegan dan antarmuka intuitif sangat menyenangkan.',
               ),
             ),
+
+            const SizedBox(height: 20), // jarak antar testimoni
+
+            // Testimoni 2
+            Center(
+              child: buildTestimonialCard(
+                'ian',
+                'ian@gmail.com',
+                'Luar biasa! Proses kerja jadi lebih cepat dan praktis. Tim kami sangat terbantu.',
+              ),
+            ),
+            
           ],
         ),
       ),

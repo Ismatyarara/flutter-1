@@ -2,6 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:isma_project/container_widget/container_dua.dart';
 import 'package:isma_project/container_widget/container_satu.dart';
+import 'package:isma_project/form_widget/input_screen.dart';
+import 'package:isma_project/readmap_belajar_rpl/grid_roadmap.dart';
+import 'package:isma_project/grid_view/grid_satu.dart';
+import 'package:isma_project/grid_view/grid_view.dart';
+import 'package:isma_project/list_widget/list_satu.dart';
+import 'package:isma_project/list_widget/list_screen.dart';
 import 'package:isma_project/main_layout.dart';
 import 'package:isma_project/row_column_widget/column_satu.dart';
 import 'package:isma_project/row_column_widget/latihan_dua.dart';
@@ -23,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
    return MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: LatihanDua()
+    home:  InputFormScreen()
    );
   }
 }
